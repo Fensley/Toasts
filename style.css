@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 12px;
+}
+.container{
+    height: 500px;
+    width: 700px;
+    padding: 10px;
+}
+
+.first{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    position: relative;
+}
+.file{
+    position: relative;
+    left: 60px;
+}
+.material-symbols-outlined{
+    padding: 2px;
+    margin: 10px;
+    border: 1px solid;
+    background-color: #0FBA2F;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.xxx{
+    cursor: pointer;
+    background-color: transparent;
+    color: gray;
+    position: absolute;
+    left: 90%;
+}
+.fouth,
+.third{
+    border-radius: 50px;
+}
+.check{
+    color: #0FBA2F;
+    background-color: white;
+}
+.second ,
+.fouth,
+.six{
+    background-color: black;
+    color: white;
+}
+.has{
+    
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.has .file{
+    position: relative;
+    left: 4%;
+}
+.done{
+    position: absolute;
+    bottom: -14px;
+   left: -50px;
+}
+.fith {
+    position: relative;
+}
+
+.fith::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 2px;
+    background-color: rgb(182, 182, 182);
+}
+
+.toggle {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.toggle.active {
+    opacity: 1;
+}
+
